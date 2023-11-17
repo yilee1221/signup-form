@@ -13,10 +13,13 @@ body {
     height: 100vh;
     width: 100vw;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .disclaimer {
+    font-size: 17px;
     padding: 40px;
+    max-width: 500px;
 }
 
 .end {
@@ -31,6 +34,16 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
+}
+
+.credit {
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+    font-size: 10px;
+    font-weight: lighter;
+    
 }
 
 .right {
@@ -38,10 +51,12 @@ body {
 }
 
 .logo img {
-    width: 80px;
-    font-family: Logofont;
+    width: 100px;
 }
-
+.logo h1 {
+    font-family: Logofont;
+    font-size: 100px;
+}
 .info {
     box-shadow: 0 -5px 2px -5px rgba(0,0,0,0.2), 0 3px 3px 1px rgba(0,0,0,0.1);
     margin-bottom: 30px;
@@ -51,14 +66,21 @@ body {
 .labels {
     display: flex;
     flex-direction: column;
+    padding-bottom: 15px;
 }
 .inputs {
     display: flex;
     gap: 40px;
 }
+
+.labels > label {
+    font-size: 10px;
+}
 .logo {
-    display: flex;
     padding: 10px;
+    height: 140px;
+    margin-top: 200px;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,0.4);
@@ -76,4 +98,8 @@ a {
     color: var(--darkgreen);
     font-weight: bold;
     text-decoration: none;
+}
+.end p {
+    margin-top: 25px;
+    font-size: 12px;
 }
