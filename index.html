@@ -9,8 +9,11 @@
 </head>
 <body>
     <div class="left">
-        <h1>ODIN</h1>
-        <p>Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        <div class="logo">
+            <img src="odin-lined.png" alt="odin logo"><h1>ODIN</h1>
+        </div>
+        <p class="credit">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on 
+            <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
         </p>
     </div>
 
@@ -24,25 +27,37 @@
             <p>You know you want to.</p>
         </div>
         <div class="info">
-            <p>Let's do this!</p>
+            <div>Let's do this!</div>
             <form action="" method="post">
-                <div>
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name">
+                <div class="inputs">
+                    <div class="labels">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name">
+                    </div>
+                    <div class="labels">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name">
+                    </div>
                 </div>
-                <div>
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                    <label for="phone-num">PHONE NUMBER</label>
-                    <input type="text" name="phone" id="phone-num">
+                <div class="inputs">
+                    <div class="labels">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="labels">
+                        <label for="phone-num">PHONE NUMBER</label>
+                        <input type="text" name="phone" id="phone-num">
+                    </div>
                 </div>
-                <div>
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password">
-                    <label for="confirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm">
+                <div class="inputs">
+                    <div class="labels">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password">
+                    </div>
+                    <div class="labels">
+                        <label for="confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm">
+                    </div>
                 </div>
             </form>
         </div>

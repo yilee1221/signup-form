@@ -2,22 +2,67 @@
     --darkgreen: #596D48;
     --inputborder: #E5E7EB;
 }
+@font-face {
+    font-family: Logofont;
+    src: url(Norse-Bold.otf);
+}
 body {
+    margin: 0;
+    padding: 0;
     display: flex;
     height: 100vh;
-}
-.left {
-    flex: 1;
-}
-.right {
-    flex: 2;
-    padding: 40px;
-}
-.left {
-    color: white;
-    background-image: url("background-unsplash.jpg");
+    width: 100vw;
+    box-sizing: border-box;
 }
 
+.disclaimer {
+    padding: 40px;
+}
+
+.end {
+    padding: 0px 40px;
+}
+
+.left {
+    width: 40%;
+    text-align: center;
+    color: white;
+    background-image: url("background-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.right {
+    flex: auto;
+}
+
+.logo img {
+    width: 80px;
+    font-family: Logofont;
+}
+
+.info {
+    box-shadow: 0 -5px 2px -5px rgba(0,0,0,0.2), 0 3px 3px 1px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    padding: 20px 40px;
+
+}
+.labels {
+    display: flex;
+    flex-direction: column;
+}
+.inputs {
+    display: flex;
+    gap: 40px;
+}
+.logo {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+}
 button {
     color: white;
     background-color: var(--darkgreen);
