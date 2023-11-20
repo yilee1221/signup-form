@@ -18,8 +18,10 @@ body {
 
 .disclaimer {
     font-size: 17px;
+    font-weight: 700;
     padding: 40px;
-    max-width: 500px;
+    max-width: 550px;
+    margin-top: 50px;
 }
 
 .end {
@@ -72,9 +74,14 @@ body {
     display: flex;
     gap: 40px;
 }
-
+input {
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+    font-size: 17px;
+}
 .labels > label {
     font-size: 10px;
+    margin-bottom: 2px;
 }
 .logo {
     padding: 10px;
@@ -90,6 +97,9 @@ button {
     background-color: var(--darkgreen);
     padding: 10px 40px;
     border-radius: 10px;
+    border: none;
+    box-shadow: 3px 3px 1px rgba(0,0,0,0.1);
+    font-weight: bold;
 }
 a {
     color: inherit;
