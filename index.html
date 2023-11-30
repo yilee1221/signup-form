@@ -25,44 +25,48 @@
             <p>You <em>know</em> you want to.</p>
         </div>
         <div class="info">
-            <p>Let's do this!</p>
-            <form action="" method="post">
+            <p><strong>Let's do this!</strong></p>
+            <form action="#" method="get">
                 <div class="inputs">
                     <div class="labels">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name">
+                        <input type="text" id="first-name" maxlength="25">
                     </div>
                     <div class="labels">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name">
+                        <input type="text" id="last-name" maxlength="25">
                     </div>
                 </div>
                 <div class="inputs">
                     <div class="labels">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
+                        
                     </div>
                     <div class="labels">
                         <label for="phone-num">PHONE NUMBER</label>
-                        <input type="text" name="phone" id="phone-num">
+                        <input type="text" name="phone" id="phone-num" pattern="[0-9]{10}">
                     </div>
                 </div>
                 <div class="inputs">
                     <div class="labels">
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password">
+                        <input type="password" name="password" id="password" required 
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
                     </div>
                     <div class="labels">
                         <label for="confirm">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm">
+                        <input type="password" name="confirm" id="confirm" required>
+                        <div class="error">Passwords do not match</div>
                     </div>
+                </div>
+                <div class="end">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
                 </div>
             </form>
         </div>
-        <div class="end">
-            <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="">Log in</a></p>
-        </div>
+        
     </div>
     
 </body>

@@ -17,35 +17,28 @@ body {
 }
 
 .disclaimer {
-    font-size: 17px;
+    font-size: 1.1rem;
     font-weight: 700;
     padding: 40px;
     max-width: 550px;
     margin-top: 50px;
 }
 
-.end {
-    padding: 0px 40px;
-}
-
 .left {
-    width: 40%;
-    text-align: center;
+    width: 40vw;
     color: white;
     background-image: url("background-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
 }
 
 .credit {
     position: absolute;
     bottom: 0px;
-    left: 50px;
-    font-size: 10px;
+    left: 30px;
+    font-size: 0.7rem;
     font-weight: lighter;
-    
 }
 
 .right {
@@ -58,6 +51,8 @@ body {
 .logo h1 {
     font-family: Logofont;
     font-size: 100px;
+    position: relative;
+    top: 12px;
 }
 .info {
     box-shadow: 0 -5px 2px -5px rgba(0,0,0,0.2), 0 3px 3px 1px rgba(0,0,0,0.1);
@@ -75,13 +70,18 @@ body {
     gap: 40px;
 }
 input {
+    padding: 3px 10px;
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 4px;
-    font-size: 17px;
+    font-size: 0.9rem;
+    outline: none;
+    height: 20px;
+    width: 200px;
 }
 .labels > label {
-    font-size: 10px;
+    font-size: 0.7rem;
     margin-bottom: 2px;
+    letter-spacing: 0.5px;
 }
 .logo {
     padding: 10px;
@@ -95,8 +95,8 @@ input {
 button {
     color: white;
     background-color: var(--darkgreen);
-    padding: 10px 40px;
-    border-radius: 10px;
+    padding: 12px 50px;
+    border-radius: 5px;
     border: none;
     box-shadow: 3px 3px 1px rgba(0,0,0,0.1);
     font-weight: bold;
@@ -111,5 +111,26 @@ a {
 }
 .end p {
     margin-top: 25px;
-    font-size: 12px;
+    font-size: 0.8rem;
 }
+
+.error {
+    color:red;
+    font-size: 0.6rem;
+}
+button:hover {
+    background-color: #404E34;
+    cursor: pointer;
+}
+
+input:valid:focus {
+    border: 1px solid blue;
+}
+
+input:invalid:focus {
+    border: 1px solid red;
+}
+
+
+
+
